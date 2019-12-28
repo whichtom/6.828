@@ -25,7 +25,7 @@ Solutions to 6.828 Operating Systems
 - [ ] lab 4: preemptive multitasking
 - [ ] lab 5: spawn and shell
 
-Tools
+Tools (macOS)
 -----
 The tools were installed by following [this](https://pdos.csail.mit.edu/6.828/2014/tools.html) advice, thus my toolchain consists of:
 * gmp-5.0.2
@@ -33,5 +33,10 @@ The tools were installed by following [this](https://pdos.csail.mit.edu/6.828/20
 * binutils-2.21.1
 * gcc-4.6.1
 * gdb-7.3.1
+
 Also
 * QEMU 4.2.0
+
+
+Honestly will probably just end up using my Ubuntu VM because the QEMU remote debugger is being annoying.
+
