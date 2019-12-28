@@ -47,6 +47,8 @@ runcmd(struct cmd *cmd)
   struct execcmd *ecmd;
   struct pipecmd *pcmd;
   struct redircmd *rcmd;
+  char *path=(char *)malloc(150*sizeof(char));
+  char *root="/bin/";
 
   if(cmd == 0)
     exit(0);
@@ -56,27 +58,61 @@ runcmd(struct cmd *cmd)
     fprintf(stderr, "unknown runcmd\n");
     exit(-1);
 
-  case ' ':
+  case ' ': // ls
     ecmd = (struct execcmd*)cmd;
     if(ecmd->argv[0] == 0)
       exit(0);
-    fprintf(stderr, "exec not implemented\n");
-    // Your code here ...
-    break;
+//    fprintf(stderr, "exec not implemented\n");
+	if(access(ecmd->argv[0], F_OK) == 0) { // checking if command is in path
+		execv(ecmd->argv[0], ecmd->argv); 
+	} else {
+		strcpy(path, root);
+		strcat(path, ecmd->argv[0]);
+		if(access(path, F_OK) == 0) { // check if command is in new path
+			execv(path, ecmd->argv);
+		} else {
+			fprintf(stderr, "%s: command not found.\n", ecmd->argv[0]);
+		}
+	}
+	break;
 
-  case '>':
+  case '>': // redir
   case '<':
     rcmd = (struct redircmd*)cmd;
-    fprintf(stderr, "redir not implemented\n");
-    // Your code here ...
+//    fprintf(stderr, "redir not implemented\n");
+    close(rcmd->fd); // close file
+    if(open(rcmd->file, rcmd->mode, S_IRWXU) < 0) { // open new file with RWX 
+	  fprintf(stderr, "unable to open file\n");
+	  exit(0);
+	}
     runcmd(rcmd->cmd);
     break;
 
-  case '|':
+  case '|': // pipe
     pcmd = (struct pipecmd*)cmd;
-    fprintf(stderr, "pipe not implemented\n");
-    // Your code here ...
-    break;
+//    fprintf(stderr, "pipe not implemented\n");
+		if(pipe(p) < 0) {
+			fprintf(stderr, "unable to create pipe\n");
+		}
+		if(fork1() == 0) { // executes left
+			close(1);
+			dup(p[1]);
+			close(p[0]);
+			close(p[1]);
+			runcmd(pcmd->left);
+		}
+		if(fork1() == 0) { // executes right
+			close(0);
+			dup(p[0]);
+			close(p[0]);
+			close(p[1]);
+			runcmd(pcmd->right);
+		}
+		close(p[0]);
+		close(p[1]);
+		wait(&r);
+		wait(&r);
+		break;
   }    
   exit(0);
 }
@@ -122,7 +158,7 @@ fork1(void)
 {
   int pid;
   
-  pid = fork();
+  pid = fork(); // returns 0 to child process, pid to parent
   if(pid == -1)
     perror("fork");
   return pid;
