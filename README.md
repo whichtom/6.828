@@ -5,7 +5,7 @@ Solutions to 6.828 Operating Systems
 [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-828-operating-system-engineering-fall-2012/assignments/)
 -----------
 
-- [ ] lecture 1: shell exercises
+- [x] lecture 1: shell exercises
 - [ ] lecture 2: boot xv6
 - [ ] lecture 3: xv6 system calls (system call tracing and halt system call)
 - [ ] lecture 4: xv6 lazy page allocation (eliminate allocation from sbrk() and lazy allocation)
