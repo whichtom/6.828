@@ -24,3 +24,14 @@ Solutions to 6.828 Operating Systems
 - [ ] lab 3: user environments
 - [ ] lab 4: preemptive multitasking
 - [ ] lab 5: spawn and shell
+
+Tools
+-----
+The tools were installed by following [this](https://pdos.csail.mit.edu/6.828/2014/tools.html) advice, thus my toolchain consists of:
+* gmp-5.0.2
+* mpfr-4.0.2
+* binutils-2.21.1
+* gcc-4.6.1
+* gdb-7.3.1
+Also
+* QEMU 4.2.0
