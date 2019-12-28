@@ -7,6 +7,7 @@ Solutions to 6.828 Operating Systems
 
 - [x] lecture 1: shell exercises
 - [ ] lecture 2: boot xv6
+	* note: ```git clone git://github.com/mit-pdos/xv6-public.git```
 - [ ] lecture 3: xv6 system calls (system call tracing and halt system call)
 - [ ] lecture 4: xv6 lazy page allocation (eliminate allocation from sbrk() and lazy allocation)
 - [ ] lecture 5: xv6 CPU alarm
