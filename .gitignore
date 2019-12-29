@@ -1,3 +1,14 @@
 *.out
 *.swp
 /boot-xv6
+*.o
+*.ko
+*.lib
+*.a
+*.dll
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+*.app
