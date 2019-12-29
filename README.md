@@ -40,5 +40,11 @@ Also
 * QEMU 4.2.0
 
 
-Honestly will probably just end up using my Ubuntu VM because the QEMU remote debugger is being annoying.
+Honestly will probably just end up using my Ubuntu VM because the QEMU remote debugger is being annoying, with the following:
+* libsdl1.2-dev
+* libtool-bin
+* libglib2.0-dev
+* libz-dev
+* libpixman-1-dev
 
+and it seems QEMU wants python2.7. What a journey to try and get this toolchain to work.
