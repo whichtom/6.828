@@ -49,3 +49,21 @@ Honestly will probably just end up using my Ubuntu VM because the QEMU remote de
 * libpixman-1-dev
 
 and it seems QEMU wants python2.7. What a journey to try and get this toolchain to work.
+
+
+Current status
+--------------
+
+```
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+warning: Selected architecture i8086 is not compatible with reported target architecture i386:x86-64
+Architecture `i8086' not recognized.
+The target architecture is set automatically (currently i386:x86-64)
+```
+
+Some stupid problem with target architecture and gdb not working since i386 is deprecated. On my Ubuntu VM I'm having weird permission problems. Really need to get a pure Linux machine.
+
+
+
+
