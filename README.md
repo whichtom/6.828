@@ -62,8 +62,3 @@ Architecture `i8086' not recognized.
 The target architecture is set automatically (currently i386:x86-64)
 ```
 
-Some stupid problem with target architecture and gdb not working since i386 is deprecated. On my Ubuntu VM I'm having weird permission problems. Really need to get a pure Linux machine.
-
-
-
-
