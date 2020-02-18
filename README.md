@@ -9,7 +9,6 @@ Solutions to 6.828 Operating Systems
 - [ ] lecture 2: boot xv6
 	* note: ```git clone git://github.com/mit-pdos/xv6-public.git```
 	* [This is also very useful](https://web.archive.org/web/20190308091152/http://zoo.cs.yale.edu:80/classes/cs422/2011/lec/l2-hw)
-	* also ```i386-jos-elf-gdb``` instead of ```gdb```
 - [ ] lecture 3: xv6 system calls (system call tracing and halt system call)
 - [ ] lecture 4: xv6 lazy page allocation (eliminate allocation from sbrk() and lazy allocation)
 - [ ] lecture 5: xv6 CPU alarm
@@ -28,19 +27,8 @@ Solutions to 6.828 Operating Systems
 - [ ] lab 4: preemptive multitasking
 - [ ] lab 5: spawn and shell
 
-Tools (macOS)
+Tools (Ubuntu)
 -----
-The tools were installed by following [this](https://pdos.csail.mit.edu/6.828/2014/tools.html) advice, thus my toolchain consists of:
-* gmp-5.0.2
-* mpfr-4.0.2
-* binutils-2.21.1
-* gcc-4.6.1
-* gdb-7.3.1
-
-Also
-* QEMU 4.2.0
-
-
 Honestly will probably just end up using my Ubuntu VM because the QEMU remote debugger is being annoying, with the following:
 * libsdl1.2-dev
 * libtool-bin
@@ -48,17 +36,5 @@ Honestly will probably just end up using my Ubuntu VM because the QEMU remote de
 * libz-dev
 * libpixman-1-dev
 
-and it seems QEMU wants python2.7. What a journey to try and get this toolchain to work.
 
-
-Current status
---------------
-
-```
-warning: No executable has been specified and target does not support
-determining executable automatically.  Try using the "file" command.
-warning: Selected architecture i8086 is not compatible with reported target architecture i386:x86-64
-Architecture `i8086' not recognized.
-The target architecture is set automatically (currently i386:x86-64)
-```
 
