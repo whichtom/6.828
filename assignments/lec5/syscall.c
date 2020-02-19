@@ -103,6 +103,7 @@ extern int sys_unlink(void);
 extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
+extern int sys_date(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -126,6 +127,7 @@ static int (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
+[SYS_date]	  sys_date,
 };
 
 void
@@ -140,18 +142,18 @@ syscall(void)
     switch (num) {
       case SYS_fork:
         cprintf("fork -> ");
-		break;
+	break;
       case SYS_exit:
-		cprintf("exit -> ");
-		break;
+	cprintf("exit -> ");
+	break;
       case SYS_wait:
-		cprintf("wait -> ");
-		break;
+	cprintf("wait -> ");
+	break;
       case SYS_pipe:
-		cprintf("pipe -> ");
-		break;
+	cprintf("pipe -> ");
+	break;
       case SYS_read:
-		cprintf("read -> ");
+        cprintf("read -> ");
         break;
       case SYS_kill:
         cprintf("kill -> ");
