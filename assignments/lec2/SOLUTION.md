@@ -15,7 +15,7 @@ As I am ssh'ing to my ubuntu box from macos via vagrant: `qemu-nox-gdb` runs wit
  
 ```
 $ make qemu-nox-gdb
-$ gdb kernel -iex 'add-auto-load-safe-path /
+$ gdb kernel -iex 'add-auto-load-safe-path /'
 ...
 The target architecture is assumed to be i8086
 [f000:fff0]    0xffff0: ljmp   $0xf000,$0xe05b
