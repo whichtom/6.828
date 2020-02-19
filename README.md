@@ -1,11 +1,11 @@
-[Solutions to 6.828 Operating Systems](https://pdos.csail.mit.edu/6.828/2018/schedule.html)
+Solutions to [6.828 Operating Systems](https://pdos.csail.mit.edu/6.828/2018/schedule.html)
 ====================================
 "This course studies fundamental design and implementation ideas in the engineering of operating systems. Lectures are based on a study of UNIX and research papers. Topics include virtual memory, threads, context switches, kernels, interrupts, system calls, interprocess communication, coordination, and the interaction between software and hardware. Individual laboratory assignments involve implementation of a small operating system in C, with some x86 assembly."
 
 ## Assignments
 - [x] LEC 2 HW [boot xv6](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-boot.html)
 - [x] LEC 3 HW: [shell](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-shell.html)
-- [ ] LEC 5 HW: [xv6 system calls](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-syscall.html)
+- [x] LEC 5 HW: [xv6 system calls](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-syscall.html)
 - [ ] LEC 6 HW: [xv6 lazy page allocation](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-zero-fill.html)
 - [ ] LEC 7 HW: [xv6 CPU alarm](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-alarm.html)
 - [ ] LEC 8 HW: [threads and locking](https://pdos.csail.mit.edu/6.828/2018/homework/lock.html)
