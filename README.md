@@ -24,9 +24,8 @@ Solutions to 6.828 Operating Systems
 - [ ] lab 4: preemptive multitasking
 - [ ] lab 5: spawn and shell
 
-## Tools (Ubuntu)
+## Tools (Ubuntu 18.04)
 
-Honestly will probably just end up using my Ubuntu VM because the QEMU remote debugger is being annoying, with the following:
 * libsdl1.2-dev
 * libtool-bin
 * libglib2.0-dev
