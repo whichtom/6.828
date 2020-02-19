@@ -1,5 +1,4 @@
-Lecture 2
-=========
+### Assignment 2
 
 Finding the address of `_start`, the entry point of the kernel.
 
