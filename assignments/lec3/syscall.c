@@ -138,20 +138,20 @@ syscall(void)
   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
     curproc->tf->eax = syscalls[num]();
     switch (num) {
-      case SYS_FORK:
+      case SYS_fork:
         cprintf("fork -> ");
-	break;
+		break;
       case SYS_exit:
-	cprintf("exit -> ");
-	break;
+		cprintf("exit -> ");
+		break;
       case SYS_wait:
-	cprintf("wait -> ");
-	break;
+		cprintf("wait -> ");
+		break;
       case SYS_pipe:
-	cprintf("pipe -> ");
-	break;
+		cprintf("pipe -> ");
+		break;
       case SYS_read:
-        cprintf("read -> ");
+		cprintf("read -> ");
         break;
       case SYS_kill:
         cprintf("kill -> ");
