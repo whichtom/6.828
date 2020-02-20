@@ -11,7 +11,7 @@ $ nm kernel | grep _start
 
 So the address of `_start_` is that `0010000c`.
 
-As I am ssh'ing to my ubuntu box from macos via vagrant: `qemu-nox-gdb` runs with serial console and gdb (see [here](https://pdos.csail.mit.edu/6.828/2010/labguide.html)), and `gdb kernel -iex 'add-auto-load-safe-path /`' fixes a weird problem with it being unable to run the `.gdbinit`. 
+As I am ssh'ing to my ubuntu box from macos via vagrant: `qemu-nox-gdb` runs with serial console and gdb (see [here](https://pdos.csail.mit.edu/6.828/2010/labguide.html)), and `gdb kernel -iex 'add-auto-load-safe-path /`' fixes a weird problem with it being unable to run the `.gdbinit`. Alternatively, `set auto-load safe-path /` could just be added to `~/.gdbinit` to allow the `.gbdinit` in the xv6-public directory to be accessed. 
  
 ```
 $ make qemu-nox-gdb
