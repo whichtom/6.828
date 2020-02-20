@@ -19,11 +19,13 @@ sys_sbrk(void)
 ```
 
 After running `$ make qemu-nox`, and then `$ echo hi`:
+
 `
 $ echo hi
 pid 3 sh: trap 14 err 6 on cpu 0 eip 0x112c addr 0x4004--kill proc
 $  
 `
+
 which just means a page fault has been caught by the kernel trap handler, at the addr `0x4004`.
 
 
@@ -53,6 +55,7 @@ if (tf->trapno == T_PGFLT) {
 
 
 Now re-running `$ make qemu-nox`, and then `$ echo hi`:
+
 `
 $ echo hi
 hi
