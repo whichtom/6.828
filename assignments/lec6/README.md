@@ -56,8 +56,8 @@ if (tf->trapno == T_PGFLT) {
 
 Now re-running `$ make qemu-nox`, and then `$ echo hi`:
 
-`
+```
 $ echo hi
 hi
-`
+```
 
