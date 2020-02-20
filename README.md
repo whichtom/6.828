@@ -6,7 +6,7 @@ Solutions to [6.828 Operating Systems](https://pdos.csail.mit.edu/6.828/2018/sch
 - [x] LEC 2 HW [boot xv6](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-boot.html)
 - [x] LEC 3 HW: [shell](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-shell.html)
 - [x] LEC 5 HW: [xv6 system calls](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-syscall.html)
-- [ ] LEC 6 HW: [xv6 lazy page allocation](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-zero-fill.html)
+- [x] LEC 6 HW: [xv6 lazy page allocation](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-zero-fill.html)
 - [ ] LEC 7 HW: [xv6 CPU alarm](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-alarm.html)
 - [ ] LEC 8 HW: [threads and locking](https://pdos.csail.mit.edu/6.828/2018/homework/lock.html)
 - [ ] LEC 9 HW: [xv6 locking](https://pdos.csail.mit.edu/6.828/2018/homework/xv6-lock.html)
