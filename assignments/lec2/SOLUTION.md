@@ -68,7 +68,7 @@ The reason of the 28 bytes of 0 and a `0x7d8d` is that after the function calls 
 ## References
 - [2011 Yale: Running and debugging xv6](https://web.archive.org/web/20190308091152/http://zoo.cs.yale.edu/classes/cs422/2011/lec/l2-hw)
 - [UCI xv6](https://www.ics.uci.edu/~aburtsev/238P/hw/hw2-boot-xv6.html)
-- [xv6-public.git](git clone git://github.com/mit-pdos/xv6-public.git)
+- xv6-public.git: `$ git clone git://github.com/mit-pdos/xv6-public.git`
 
 The MIT OCW is a little sketchy and not helpful sometimes.
 
